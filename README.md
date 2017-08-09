@@ -10,6 +10,7 @@ $npm install
 
 $nodemon index.js
 
+```
 
 To get your access token for instagram API - http://instagram.pixelunion.net/
 To read API documentation - https://www.instagram.com/developer/endpoints/
