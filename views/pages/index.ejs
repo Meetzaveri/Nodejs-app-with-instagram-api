@@ -9,11 +9,14 @@
 </header>
 
 <main>
+<div class="linked-account">
+    <a href="https://www.instagram.com/customdude7/" target="_blank"><h2>My Linked Account of Instagram here</h2></a>
+</div>
 <div class="row">
 <% grams.forEach(function(gram) { %>
-<div class="instagram-pic col-sm-3">
+<div id="insta" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="instagram-pic col-sm-3">
 <a href="<%= gram.link %>" target="_blank">
-<img src="<%= gram.images.standard_resolution.url %>" class="imgresponsive">
+<img  src="<%= gram.images.standard_resolution.url %>" class="img-responsive">
 </a>
 <div class="instagram-bar">
 <div class="likes">
@@ -32,5 +35,14 @@
 <footer>
 <% include ../partials/footer %>
 </footer>
+<script>
+    function bigImg(x) {
+    x.style.opacity = "1";
+    x.style.transition = "all 0.5s";
+}
+function normalImg(x) {
+ x.style.opacity = "0.5";
+}
+</script>
 </body>
 </html>
