@@ -16,6 +16,8 @@ $nodemon index.js
 
 To get your access token for instagram API - http://instagram.pixelunion.net/
 
+After getting token in url's place and observe JSON data as array will be containing of posts in instagram
+
 To read API documentation - https://www.instagram.com/developer/endpoints/
 
 
